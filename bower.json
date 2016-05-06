@@ -1,0 +1,22 @@
+{
+  "name": "Personal Website",
+  "authors": [
+    "Cliff Wright <clifford@cliffordwright.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.2.18",
+    "angular-material": "^1.0.8"
+  }
+}
