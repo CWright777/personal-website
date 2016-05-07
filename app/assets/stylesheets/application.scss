@@ -5,13 +5,11 @@
 .main-container {
   background: 
     linear-gradient(
-    rgba(84, 88, 96, 0.55), 
-    rgba(84, 88, 96, 0.55)
+    rgba(84, 88, 96, 0.45), 
+    rgba(84, 88, 96, 0.45)
     ),
     url("http://lightersideofrealestate.com/wp-content/uploads/2014/09/clouds-background-light.jpg");
 
-  //background-color: #d7e1f4;
-  //background-image: url("http://lightersideofrealestate.com/wp-content/uploads/2014/09/clouds-background-light.jpg");
   background-size: cover;
 }
 
@@ -36,6 +34,7 @@ md-sidenav{
   margin: auto;
   background-color: #203e60;
   margin-top: 3em;
+  border: 2px solid black;
 }
 
 .inner-circle {
@@ -48,109 +47,161 @@ md-sidenav{
 }
 
 //CSS for keycaps
-@import url(http://fonts.googleapis.com/css?family=Average+Sans)
+.key {
+  width: 40px;
+  height: 45px;
+  margin: 2px;
+  border-width: 3px 7px 10px;
+  border-style: solid;
+  border-radius: 4px;
+  float: left;
+  font-family: 'Average Sans', sans-serif;
+  background: #d3cfcc;
+  border-color: #ece8e4 #dedad6 #c9c4c4;
+}
 
-//.key {
-  //width: 40px;
-  //height: 45px;
-  //margin: 2px;
-  //border-width: 3px 7px 10px;
-  //border-style: solid;
-  //border-radius: 4px;
-  //float: left;
-  //font-family: 'Average Sans', sans-serif;
-  //background: #d3cfcc;
-  //border-color: #ece8e4 #dedad6 #c9c4c4;
-//}
+.key .keycap {
+  height: 40px;
+  padding: 5px 0 0 7px;
+  font-size: 18px;
+  line-height: 1;
+  background: #f5f3f1;
+  background: -webkit-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+  background: -moz-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+  background: -ms-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+  background: -o-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+  background: linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  border-radius: 4px;
+}
 
-//.key .keycap
-  //width: 33px
-  //height: 40px
-  //padding: 5px 0 0 7px
-  //font-size: 18px
-  //line-height: 1
-  //background: #f5f3f1
-  //background: -webkit-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1)
-  //background: -moz-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1)
-  //background: -ms-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1)
-  //background: -o-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1)
-  //background: linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1)
-  //box-shadow: 0 0 10px rgba(0,0,0,0.15)
-  //border-radius: 4px
-  //position: relative
-//.f_key .keycap
-  //width: inherit
-  //height: inherit
-  //font-size: 15px
-  //line-height: 45px
-  //text-indent: 7px
-  //background: #cdd3de
-  //background: -webkit-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
-  //background: -moz-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
-  //background: -ms-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
-  //background: -o-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
-  //background: linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
-  //box-shadow: 0 0 10px rgba(0,0,0,0.2)
-  //border-radius: 4px
-  //position: relative
+.f_key .keycap {
+  width: inherit;
+  height: inherit;
+  font-size: 15px;
+  line-height: 45px;
+  text-indent: 7px;
+  background: #cdd3de;;
+  background: -webkit-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+  background: -moz-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+  background: -ms-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+  background: -o-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+  background: linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
 
-//.jumbotron {
-  //$jumbotron-padding: 3em;
-  //$jumbotron-color: blue;
-  //$jumbotron-bg: white;
-  //$jumbotron-heading-color: white;
-  //$jumbotron-font-size: 2em;
-  //$jumbotron-padding: 3em;
-  //$grid-gutter-width: 5em;
-  //$border-radius-large: 20%;
-  //$screen-sm-min: 200px;
-  //$jumbotron-heading-font-size: 3em;
+.key-container {
+  background-color: #394053;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: #555;
+  height: 10em;
+  width: 35em;
+  border-radius: .1em;
+}
 
-  //padding-top:    $jumbotron-padding;
-  //padding-bottom: $jumbotron-padding;
-  //margin-bottom: $jumbotron-padding;
-  //color: $jumbotron-color;
-  //background-color: $jumbotron-bg;
+.fn {
+  color: black;
+  width: 38px;
+  border-left-width: 9px;
+}
 
-  //h1,
-  //.h1 {
-    //color: $jumbotron-heading-color;
-  //}
+.k16.left {
+  width: 120px;
+  border-right-width: 10px;
+}
 
-  //p {
-    //margin-bottom: ($jumbotron-padding / 2);
-    //font-size: $jumbotron-font-size;
-    //font-weight: 200;
-  //}
+.k32 {
+  width: 328px;
+  border-width: 3px 8px 10px;
+  .keycap {
+    width: 321px
+  }
+}
 
-  //> hr {
-    //border-top-color: darken($jumbotron-bg, 10%);
-  //}
+.f_key {
+  background: #a8aeb8;
+  border-color: #c4c7cc #adb9cc #96a6bd;
+}
 
-  //.container &,
-  //.container-fluid & {
-    //border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
-    //padding-left:  ($grid-gutter-width / 2);
-    //padding-right: ($grid-gutter-width / 2);
-  //}
+.k16.right {
+  width: 120px;
+  border-left-width: 10px;
+}
 
-  //.container {
-    //max-width: 100%;
-  //}
+.main {
+  height: 80vh;
+}
 
-  //@media screen and (min-width: $screen-sm-min) {
-    //padding-top:    ($jumbotron-padding * 1.6);
-    //padding-bottom: ($jumbotron-padding * 1.6);
+.info-container {
+  background-color:#394053;
+  padding: 20px;
+  border-radius: .1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 
-    //.container &,
-    //.container-fluid & {
-      //padding-left:  ($jumbotron-padding * 2);
-      //padding-right: ($jumbotron-padding * 2);
-    //}
+.key-text {
+  color: #555;
+  height: 85%;
+}
 
-    //h1,
-    //.h1 {
-      //font-size: $jumbotron-heading-font-size;
-    //}
-  //}
-//}
+.jumbotron {
+  $jumbotron-padding: 3em;
+  $jumbotron-color: blue;
+  $jumbotron-bg: white;
+  $jumbotron-heading-color: white;
+  $jumbotron-font-size: 2em;
+  $jumbotron-padding: 3em;
+  $grid-gutter-width: 5em;
+  $border-radius-large: 20%;
+  $screen-sm-min: 200px;
+  $jumbotron-heading-font-size: 3em;
+
+  padding-top:    $jumbotron-padding;
+  padding-bottom: $jumbotron-padding;
+  margin-bottom: $jumbotron-padding;
+  color: $jumbotron-color;
+  background-color: $jumbotron-bg;
+
+  h1,
+  .h1 {
+    color: $jumbotron-heading-color;
+  }
+
+  p {
+    margin-bottom: ($jumbotron-padding / 2);
+    font-size: $jumbotron-font-size;
+    font-weight: 200;
+  }
+
+  > hr {
+    border-top-color: darken($jumbotron-bg, 10%);
+  }
+
+  .container &,
+  .container-fluid & {
+    border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
+    padding-left:  ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top:    ($jumbotron-padding * 1.6);
+    padding-bottom: ($jumbotron-padding * 1.6);
+
+    .container &,
+    .container-fluid & {
+      padding-left:  ($jumbotron-padding * 2);
+      padding-right: ($jumbotron-padding * 2);
+    }
+
+    h1,
+    .h1 {
+      font-size: $jumbotron-heading-font-size;
+    }
+  }
+}
