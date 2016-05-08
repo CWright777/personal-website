@@ -17,7 +17,6 @@
   "dependencies": {
     "angular": "^1.5.5",
     "angular-ui-router": "^0.2.18",
-    "angular-material": "^1.0.8",
-    "ng-slide-down": "^1.0.0"
+    "angular-material": "^1.0.8"
   }
 }
