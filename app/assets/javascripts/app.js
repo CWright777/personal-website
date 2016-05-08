@@ -13,7 +13,8 @@ function($stateProvider, $urlRouterProvider) {
       url: '/',
       views: {
         '@': {
-         templateUrl:'main.html'
+         templateUrl:'main.html',
+         controller: 'templateCtrl'
         },
         'sidenav@splash' : {
           templateUrl: 'sideNav/_sideNav.html',
@@ -26,5 +27,5 @@ function($stateProvider, $urlRouterProvider) {
       },
     })
 
-  $urlRouterProvider.otherwise('splash');
+  $urlRouterProvider.otherwise('/');
 }])

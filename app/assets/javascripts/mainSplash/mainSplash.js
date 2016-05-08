@@ -3,7 +3,8 @@ angular.module('cliffWebsite')
 '$scope',
 '$state',
 '$window',
-function($scope, $state,$window){
+'viewService',
+function($scope, $state,$window,viewService){
   $scope.goLinkedIn = function(){
     $window.location.href = "https://www.linkedin.com/in/cliffordrwright"
   }

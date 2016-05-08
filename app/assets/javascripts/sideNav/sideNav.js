@@ -1,4 +1,12 @@
 angular.module('cliffWebsite')
 .controller('navCtrl', [
-function($scope, $state, $timeout, $mdSidenav, $log){
+'$scope',
+'$state',
+'viewService',
+function($scope, $state,viewService){
+
+  $scope.showTechnologies = function(){
+    viewService.changeView('technologies');
+  }
+
 }]);

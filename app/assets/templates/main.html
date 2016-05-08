@@ -1,6 +1,12 @@
 <section layout="row" class="container main-container">
   <div ui-view="sidenav"></div>
-  <div layout-padding layout="column" layout-align="start center" flex>
-      <div ui-view="main"></div>
+  <div layout="column" flex layout-algin="end center">
+    <div class="slider" id="slider">
+      <div ui-view="main" id="current" class="full-width"></div>
+    </div>
+    <div class="slider" id="slider2">
+      <div ui-view="main" id="current" class="full-width"></div>
+    </div>
   </div>
 </section>
+<button onclick="document.getElementById('slider').classList.toggle('closed');document.getElementById('slider2').classList.toggle('open');">Toggle slider</button>
