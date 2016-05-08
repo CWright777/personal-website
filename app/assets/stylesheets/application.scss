@@ -18,36 +18,53 @@ md-sidenav{
   background-color: #2E303C;
 }
 
+.divide {
+  padding: 0;
+}
+
 .side-nav-text {
-  color: white;
+  color: #dedbda;
   text-decoration: none;
+  font-size: 1.15em;
+  letter-spacing: 2px;
+  font-family: 'Raleway';
+  cursor: pointer;
 }
 
 .logo-container {
-  height: 20em;
+  margin: 3.5em 0 3.5em 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .outer-circle {
-  height: 15em;
-  width: 15em;
-  border-radius: 50%;
+  font-family: "Permanent Marker";
+  height: 3em;
+  width: 3em;
   margin: auto;
+  border-radius: 50%;
   background-color: #203e60;
-  margin-top: 3em;
-  border: 2px solid black;
+  border: 2px solid #555;
+  font-size: 3em;
+  color: #dedbda;
+  div {
+    margin-top: .7em;
+  }
 }
 
 .inner-circle {
-  height: 10em;
-  width: 10em;
+  height: 45%;
+  width: 53%;
   border-radius: 50%;
   margin: auto;
   background-color: #c6d8ec;
   vertical-align: middle;
+  border: 1px solid #cbdbed;
 }
 
 //CSS for keycaps
 .key {
+  cursor: pointer;
   width: 40px;
   height: 45px;
   margin: 2px;
@@ -112,10 +129,9 @@ md-sidenav{
 }
 
 .k32 {
-  width: 328px;
+  width: 170px;
   border-width: 3px 8px 10px;
   .keycap {
-    width: 321px
   }
 }
 
@@ -144,7 +160,7 @@ md-sidenav{
   color: #555;
   height: 85%;
 }
-
+      
 .jumbotron {
   $jumbotron-padding: 3em;
   $jumbotron-color: blue;

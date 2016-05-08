@@ -26,5 +26,5 @@ function($stateProvider, $urlRouterProvider) {
       },
     })
 
-  $urlRouterProvider.otherwise('splash');
+  $urlRouterProvider.otherwise('/ip');
 }])
