@@ -3,6 +3,7 @@
 *= require_tree .
 */
 .main-container {
+  overflow:hidden;
 }
 
 md-sidenav{
@@ -166,16 +167,37 @@ md-sidenav{
 .slider {
   width: 100%;
   max-height: 100vh; /* approximate max height */
-  transition: all 1s;
+  transition: all 10s;
+  &.ng-enter {
+    transform: translate3d(0,-100vh,0);
+  }
+  &.ng-leave {
+    transform: translate3d(0,-100vh,0);
+  }
 }
 
-.slider.closed {
+.closed {
+  max-height: 0px;
   transform: translate3d(0,-100vh,0);
 }
-.slider.open {
+.open {
   transform: translate3d(0,-100vh,0);
 }
 
 .full-width {
   width: 100%;
 }
+//.animated-class{
+  //&.ng-enter {
+    //-webkit-animation: bounceIn 1s;
+    //-moz-animation: bounceIn 1s;
+    //-ms-animation: bounceIn 1s;
+    //animation: bounceIn 1s;
+  //}
+  //&.ng-leave {
+    //-webkit-animation: bounceOut 1s;
+    //-moz-animation: bounceOut 1s;
+    //-ms-animation: bounceOut 1s;
+    //animation: bounceOut 1s;
+  //}
+//}

@@ -1,7 +1,8 @@
 angular.module('cliffWebsite', [
   'templates',
   'ui.router',
-  'ngMaterial'
+  'ngMaterial',
+  'ngAnimate'
 ])
 .config([
 '$stateProvider',
@@ -23,8 +24,11 @@ function($stateProvider, $urlRouterProvider) {
         'main@splash' : {
           templateUrl: 'mainSplash/_mainSplash.html',
           controller: 'mainSplashCtrl'
-        }
-      },
+        },
+        'technologies@splash' : {
+          templateUrl: 'technologies/_technologies.html'
+         }
+      }
     })
 
   $urlRouterProvider.otherwise('/');
