@@ -167,22 +167,27 @@ md-sidenav{
 .slider {
   width: 100%;
   max-height: 100vh; /* approximate max height */
-  transition: all 2s;
-  &.ng-enter {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  //&.ng-enter {
+    //transform: translate3d(0,-100vh,0);
+  //}
+  //&.ng-leave {
+    //transform: translate3d(0,-100vh,0);
+  //}
+
+  .closed {
+    max-height: 0px;
     transform: translate3d(0,-100vh,0);
   }
-  &.ng-leave {
+
+  .open {
     transform: translate3d(0,-100vh,0);
   }
 }
 
-.closed {
-  max-height: 0px;
-  transform: translate3d(0,-100vh,0);
-}
-.open {
-  transform: translate3d(0,-100vh,0);
-}
 
 .full-width {
   width: 100%;
