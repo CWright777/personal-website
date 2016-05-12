@@ -2,9 +2,9 @@ angular.module('cliffWebsite')
 .animation('.animated-view', function() {
 return {
     enter : function(element, done) {
-      element.css('opacity',0);
+      element.css('opacity',1);
       jQuery(element).animate({
-        opacity: 1
+        opacity: 0
       }, done);
 
       // optional onDone or onCancel callback

@@ -7,7 +7,7 @@ angular.module('cliffWebsite')
       $compile(el.contents())(scope)
       scope.$on('view_changed',function(){
         var view = viewService.getViewName()
-        angular.element(el[0]).append("<ui-view name='"+view+"' class='slider full-width'></div>")
+        angular.element(el[0]).append("<ui-view name='"+view+"' class='animated-view slider full-width'></div>")
         $compile(el.contents())(scope)
         console.log(angular.element(el.children()))
         //$animate.leave(angular.element(el.contents(),el))
