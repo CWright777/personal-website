@@ -167,10 +167,10 @@ md-sidenav{
 .slider {
   width: 100%;
   max-height: 100vh; /* approximate max height */
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  //-webkit-animation-duration: 1s;
+          //animation-duration: 1s;
+  //-webkit-animation-fill-mode: both;
+          //animation-fill-mode: both;
   //&.ng-enter {
     //transform: translate3d(0,-100vh,0);
   //}
@@ -192,6 +192,33 @@ md-sidenav{
 .full-width {
   width: 100%;
 }
+
+//the final state
+.hide {
+    display: none;
+}
+//the animation
+.hide-add-start {
+    transition: opacity 1s;
+    opacity: 0;
+}
+.hide-add {
+    display: block;
+    transition: opacity 5s;
+    opacity: 1;
+}
+.hide-add-active {
+    opacity: 0;
+}
+.hide-remove {
+    transition: opacity 5s;
+    display: block;
+    opacity: 0;
+}
+.hide-remove-active {
+    opacity: 1;
+}
+
 //.animated-class{
   //&.ng-enter {
     //-webkit-animation: bounceIn 1s;
