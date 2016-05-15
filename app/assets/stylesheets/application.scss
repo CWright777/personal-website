@@ -179,3 +179,19 @@ md-sidenav{
   width: 100%;
 }
 
+.logo {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+md-grid-tile-footer figcaption {
+  width: 100%; 
+}
+
+md-grid-tile-footer figcaption h1 {
+  margin: 0;
+  font-weight: 700;
+  width: 100%;
+  text-align: center; 
+}
