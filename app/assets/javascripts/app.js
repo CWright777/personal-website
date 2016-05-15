@@ -2,12 +2,15 @@ angular.module('cliffWebsite', [
   'templates',
   'ui.router',
   'ngMaterial',
+  'ngMessages',
+  'ngSanitize',
   'ngAnimate'
 ])
 .config([
 '$stateProvider',
 '$urlRouterProvider',
-function($stateProvider, $urlRouterProvider) {
+'$sceDelegateProvider',
+function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
 
   $stateProvider
     .state('splash', {
@@ -26,10 +29,15 @@ function($stateProvider, $urlRouterProvider) {
           controller: 'mainSplashCtrl'
         },
         'technologies@splash' : {
-          templateUrl: 'technologies/_technologies.html'
+          templateUrl: 'technologies/_technologies.html',
+          controller: 'technologiesCtrl'
          }
       }
     })
+
+  $sceDelegateProvider.resourceUrlWhitelist([
+    'self',
+    'https://s3-us-west-1.amazonaws.com/cliff-website/**'])
 
   $urlRouterProvider.otherwise('/');
 }])

@@ -4,5 +4,7 @@
 //= require angular-material
 //= require angular-animate
 //= require angular-aria
+//= require angular-sanitize
+//= require angular-messages
 //= require_tree ../templates
 //= require_tree .
