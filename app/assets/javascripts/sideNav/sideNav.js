@@ -9,4 +9,8 @@ function($scope, $state,viewService){
     viewService.changeView('technologies');
   }
 
+  $scope.showHome = function(){
+    viewService.changeView('main');
+  }
+
 }]);

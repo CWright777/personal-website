@@ -164,72 +164,13 @@ md-sidenav{
   height: 85%;
 }
       
-.slider {
-  width: 100%;
-  max-height: 100vh; /* approximate max height */
-  //-webkit-animation-duration: 1s;
-          //animation-duration: 1s;
-  //-webkit-animation-fill-mode: both;
-          //animation-fill-mode: both;
-  //&.ng-enter {
-    //transform: translate3d(0,-100vh,0);
-  //}
-  //&.ng-leave {
-    //transform: translate3d(0,-100vh,0);
-  //}
 
-  .closed {
-    max-height: 0px;
-    transform: translate3d(0,-100vh,0);
-  }
-
-  .open {
-    transform: translate3d(0,-100vh,0);
-  }
+.open {
+  transform: translate3d(0,-100vh,0);
+  transition: 2.5s;
 }
-
 
 .full-width {
   width: 100%;
 }
 
-//the final state
-.hide {
-    display: none;
-}
-//the animation
-.hide-add-start {
-    transition: opacity 1s;
-    opacity: 0;
-}
-.hide-add {
-    display: block;
-    transition: opacity 5s;
-    opacity: 1;
-}
-.hide-add-active {
-    opacity: 0;
-}
-.hide-remove {
-    transition: opacity 5s;
-    display: block;
-    opacity: 0;
-}
-.hide-remove-active {
-    opacity: 1;
-}
-
-//.animated-class{
-  //&.ng-enter {
-    //-webkit-animation: bounceIn 1s;
-    //-moz-animation: bounceIn 1s;
-    //-ms-animation: bounceIn 1s;
-    //animation: bounceIn 1s;
-  //}
-  //&.ng-leave {
-    //-webkit-animation: bounceOut 1s;
-    //-moz-animation: bounceOut 1s;
-    //-ms-animation: bounceOut 1s;
-    //animation: bounceOut 1s;
-  //}
-//}

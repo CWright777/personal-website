@@ -3,17 +3,22 @@ angular.module('cliffWebsite')
   return {
     //restrict:'E',
     link: function(scope,elem,attrs){
-      elem.html("<ui-view name='main' class='slider full-width'></div>")
+      elem.html("<ui-view name='main' class='full-width'></div>")
       $compile(elem.contents())(scope)
       scope.$on('view_changed',function(){
         var view = viewService.getViewName()
-        elem.append("<ui-view name='"+view+"' class='slider full-width'></div>")
+        elem.append("<ui-view name='"+view+"'class='full-width'></div>")
         $compile(elem.contents())(scope)
-        $animate.addClass(elem,'hide-add-start')
+        $animate.addClass(elem,'open')
+
         $timeout(function(){
-          $animate.removeClass(elem,'hide')
-        },3000)
-        })
+          var firstElement = elem[0].firstElementChild
+          $animate.removeClass(elem,'open')
+          $timeout(function(){
+            firstElement.remove()
+          },0)
+        },2500)
+      })
 
         //$animate.leave(angular.element(el.contents(),el))
 
