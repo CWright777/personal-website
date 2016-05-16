@@ -15,6 +15,9 @@ md-sidenav{
   padding: 0;
 }
 
+.side-nav {
+  width: 15em;
+}
 .side-nav-text {
   color: #dedbda;
   text-decoration: none;
@@ -175,6 +178,11 @@ md-sidenav{
   transition: 2.5s;
 }
 
+.close {
+  height: 0vh;
+  transition: 2.5s;
+}
+
 .full-width {
   width: 100%;
 }
@@ -194,4 +202,70 @@ md-grid-tile-footer figcaption h1 {
   font-weight: 700;
   width: 100%;
   text-align: center; 
+}
+
+.tile-list {
+  font-size: 0px;
+}
+
+.pastel-green {
+  background-color: #57d69f;
+}
+
+.pastel-cyan {
+  background-color: #1c9edf;
+}
+.pastel-red {
+  background-color: #de292b;
+}
+
+.beige {
+  background-color: #F5F5DC;
+}
+
+.green {
+  background-color: #27a049;
+}
+
+.light-green {
+  background-color: #71b731;
+}
+
+.light-orange {
+  background-color: #f5c021;
+}
+
+.salmon {
+  background-color: #ff7a74;
+}
+
+.black {
+  background-color: #282828;
+}
+
+.cyan {
+  background-color: #1c9edf;
+}
+
+.orange {
+  background-color: #f45900;
+}
+
+.blue {
+  background-color: #1a2f54;
+}
+
+.pink {
+  background-color: #cb5790;
+}
+.yellow {
+  background-color: #ffff66;
+}
+
+.dark-gray {
+  background-color: #3d3c3a;
+}
+
+.white-yellow {
+  background-color: #ffffe6;
 }

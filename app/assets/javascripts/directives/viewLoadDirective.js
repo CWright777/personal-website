@@ -1,19 +1,21 @@
 angular.module('cliffWebsite')
 .directive('viewLoad', function ($compile,$animate,viewService,$timeout) {
   return {
-    //restrict:'E',
+    restrict:'E',
     link: function(scope,elem,attrs){
       elem.html("<ui-view name='main' class='full-width'></div>")
       $compile(elem.contents())(scope)
       scope.$on('view_changed',function(){
         var view = viewService.getViewName()
         elem.append("<ui-view name='"+view+"'class='full-width'></div>")
-        $compile(elem.contents())(scope)
-        $animate.addClass(elem,'open')
+        elem.children().wrap("<div>");
+        $compile(elem.contents())(scope);
+        $animate.addClass(elem,'open');
 
         $timeout(function(){
           var firstElement = elem[0].firstElementChild
           $animate.removeClass(elem,'open')
+          $animate.addClass(firstElement,'close')
           $timeout(function(){
             firstElement.remove()
           },0)
