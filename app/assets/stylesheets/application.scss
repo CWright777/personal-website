@@ -188,8 +188,6 @@ md-sidenav{
 }
 
 .logo {
-  height: 50%;
-  width: 50%;
   text-align: center;
 }
 
@@ -255,8 +253,8 @@ md-grid-tile-footer figcaption h1 {
   background-color: #1a2f54;
 }
 
-.pink {
-  background-color: #cb5790;
+.med-green {
+  background-color: #38A846;
 }
 .yellow {
   background-color: #ffff66;
@@ -268,4 +266,18 @@ md-grid-tile-footer figcaption h1 {
 
 .white-yellow {
   background-color: #ffffe6;
+}
+
+.tiles {
+  height: 25vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.brand-container {
+  height: 70%
+}
+
+.tile-footer {
+  height: 30%;
 }

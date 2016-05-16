@@ -1,10 +1,12 @@
 <div class="technologies">
-  <md-grid-list md-cols="4"  md-row-height="25%" md-gutter="0">
-    <md-grid-tile ng-repeat="tile in techTiles" class="{{tile['background']}}">
-      <img class ="logo" ng-src="{{tile.url}}"></img>
-      <md-grid-tile-footer>
+  <div layout="row" ng-repeat="rows in items">
+    <div layout="column" layout-align="center center" flex="25" ng-repeat="tile in rows" class="tiles {{tile['background']}}">
+      <div class="brand-container" layout="row" layout-align="center center">
+        <img class ="logo" style="height: {{tile.height}}" ng-src="{{tile.url}}"></img>
+      </div>
+      <div class="tile-footer">
         <h1 class="svg-text">{{tile.name}}</h1>
-      </md-grid-tile-footer>
-    </md-grid-tile>
-  </md-grid-list>
+      </div>
+    </div>
+  </div>
 </div>

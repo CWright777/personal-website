@@ -2,6 +2,8 @@ angular.module('cliffWebsite')
 .directive('viewLoad', function ($compile,$animate,viewService,$timeout) {
   return {
     restrict:'E',
+    transclude: true,
+    replace:true,
     link: function(scope,elem,attrs){
       elem.html("<ui-view name='main' class='full-width'></div>")
       $compile(elem.contents())(scope)
