@@ -45,7 +45,7 @@ function($scope, $state){
       height: "80%",
       background: 'light-orange'
     }, {
-      name: 'Networking',
+      name: 'Network',
       url: 'https://s3-us-west-1.amazonaws.com/cliff-website/Cisco_logo.svg',
       height: "60%",
       background: 'black'
@@ -60,15 +60,15 @@ function($scope, $state){
       height: "33%",
       background: 'orange'
     }, {
-      name: 'PostgresSQL',
-      url: 'https://s3-us-west-1.amazonaws.com/cliff-website/Postgresql_elephant.svg',
-      height: "70%",
-      background: 'blue'
-    }, {
       name: 'MySQL',
       url: 'https://s3-us-west-1.amazonaws.com/cliff-website/MySQL.svg',
       height: "60%",
       background: 'dark-gray'
+    }, {
+      name: 'PostgresSQL',
+      url: 'https://s3-us-west-1.amazonaws.com/cliff-website/Postgresql_elephant.svg',
+      height: "70%",
+      background: 'blue'
     }, {
       name: 'Flask',
       url: 'https://s3-us-west-1.amazonaws.com/cliff-website/logo_flask.svg',

@@ -2,7 +2,6 @@ angular.module('cliffWebsite')
 .directive('imgHover', function ($animate) {
   return {
     link: function(scope,elem,attrs) {
-      console.log()
       elem.bind('mouseenter', function(){
         elem[0].querySelector('img').style.transform = 'translate3d(-5vh,-5vh,0)'
         elem[0].querySelector('.tile-footer').style.height = '65%'

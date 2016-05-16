@@ -31,4 +31,15 @@ function($scope, $state,viewService,$timeout){
     }
   }
 
+  $scope.showProjects = function(){
+    if (!$scope.changing && $scope.currentView != 'projects') {
+      $scope.changing = true;
+      $scope.currentView = 'projects'
+      viewService.changeView('projects');
+      $timeout(function(){
+        $scope.changing = false;
+      },2000)
+    }
+  }
+
 }]);
