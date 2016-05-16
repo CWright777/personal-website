@@ -15,13 +15,11 @@ angular.module('cliffWebsite')
         $animate.addClass(elem,'open');
 
         $timeout(function(){
-          var firstElement = elem[0].firstElementChild
+          var firstElement = elem[0].querySelector('ui-view')
           $animate.removeClass(elem,'open')
           $animate.addClass(firstElement,'close')
-          $timeout(function(){
-            firstElement.remove()
-          },0)
-        },2500)
+          firstElement.remove()
+        },2000)
       })
 
         //$animate.leave(angular.element(el.contents(),el))

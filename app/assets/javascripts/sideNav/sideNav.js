@@ -3,14 +3,32 @@ angular.module('cliffWebsite')
 '$scope',
 '$state',
 'viewService',
-function($scope, $state,viewService){
+'$timeout',
+function($scope, $state,viewService,$timeout){
+
+  $scope.changing = false;
+  $scope.currentView = 'main'
 
   $scope.showTechnologies = function(){
-    viewService.changeView('technologies');
+    if (!$scope.changing && $scope.currentView != 'technologies') {
+      $scope.changing = true;
+      $scope.currentView = 'technologies'
+      viewService.changeView('technologies');
+      $timeout(function(){
+        $scope.changing = false;
+      },2000)
+    }
   }
 
   $scope.showHome = function(){
-    viewService.changeView('main');
+    if (!$scope.changing && $scope.currentView != 'main') {
+      $scope.changing = true;
+      $scope.currentView = 'main'
+      viewService.changeView('main');
+      $timeout(function(){
+        $scope.changing = false;
+      },2000)
+    }
   }
 
 }]);

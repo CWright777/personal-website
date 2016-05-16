@@ -1,5 +1,5 @@
 angular.module('cliffWebsite')
-.factory('viewService', function($rootScope){
+.factory('viewService', function($rootScope,$timeout){
 
   var service = {}
   service.page = ''

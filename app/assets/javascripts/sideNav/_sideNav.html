@@ -1,19 +1,11 @@
 <md-sidenav class="side-nav md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')" md-disable-backdrop="">
-    <div class="logo-container">
+    <div class="logo-container" ng-click="showHome()">
       <div class="outer-circle">
         <div>C.W.</div>
       </div>
     </div>
-    <md-divider class="divide"></md-divider>
     <md-list layout-padding>
-      <md-item-content class="side-nav-text" ng-click="showHome()" layout="row" layout-align="start center">
-        <div class="inset">
-          <i class="fa fa-diamond" aria-hidden="true"></i>
-        </div>
-        <div class="side-nav-text inset">
-          Home
-        </div>
-      </md-item-content>
+    <md-divider class="divide"></md-divider>
       <md-item-content class="side-nav-text" ng-click="showTechnologies()" layout="row" layout-align="start center">
         <div class="inset">
           <i class="fa fa-diamond" aria-hidden="true"></i>

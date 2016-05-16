@@ -28,6 +28,7 @@ md-sidenav{
 }
 
 .logo-container {
+  cursor: pointer;
   margin: 3.5em 0 3.5em 0;
   text-align: center;
   vertical-align: middle;
@@ -63,7 +64,7 @@ md-sidenav{
   cursor: pointer;
   width: 40px;
   height: 45px;
-  margin: 2px;
+  margin: -7px;
   border-width: 3px 7px 10px;
   border-style: solid;
   border-radius: 4px;
@@ -71,6 +72,11 @@ md-sidenav{
   font-family: 'Average Sans', sans-serif;
   background: #d3cfcc;
   border-color: #ece8e4 #dedad6 #c9c4c4;
+}
+
+.name {
+  transform: scale(1.1,1.1);
+  margin: 8px 4px 8px 4px;
 }
 
 .key .keycap {
@@ -108,7 +114,7 @@ md-sidenav{
   background-color: #394053;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   color: #555;
-  height: 10em;
+  height: 12em;
   width: 35em;
   border-radius: .1em;
 }
@@ -120,15 +126,19 @@ md-sidenav{
 }
 
 .k16.left {
-  width: 120px;
+  width: 140px;
   border-right-width: 10px;
 }
 
 .k32 {
-  width: 170px;
+  width: 290px;
   border-width: 3px 8px 10px;
   .keycap {
   }
+}
+
+.k32, .k16 {
+  transform: scale(.9,.9)
 }
 
 .f_key {
@@ -137,7 +147,7 @@ md-sidenav{
 }
 
 .k16.right {
-  width: 120px;
+  width: 140px;
   border-left-width: 10px;
 }
 
@@ -146,6 +156,8 @@ md-sidenav{
   width: 100%;
 }
 .main {
+  min-width: 50em;
+  min-height: 30em;
   background: 
     linear-gradient(
     rgba(84, 88, 96, 0.45), 
@@ -175,12 +187,12 @@ md-sidenav{
 
 .open {
   transform: translate3d(0,-100vh,0);
-  transition: 2.5s;
+  transition: 2s;
 }
 
 .close {
-  height: 0vh;
-  transition: 2.5s;
+  height: 0px;
+  transition: 2s;
 }
 
 .full-width {
@@ -264,6 +276,7 @@ md-sidenav{
   text-align: center;
   vertical-align: middle;
   min-height: 7.8em;
+  min-width: 13em;
   .tile-footer {
     height: 30%;
     background: 
@@ -289,4 +302,9 @@ md-sidenav{
 
 .brand-container {
   height: 70%
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
 }
