@@ -34,6 +34,7 @@ function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
          },
         'projects@splash' : {
           templateUrl: 'projects/_projects.html',
+          controller: 'projectsCtrl'
          }
       }
     })

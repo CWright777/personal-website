@@ -116,16 +116,30 @@ md-sidenav{
   color: #555;
   height: 12em;
   width: 35em;
-  border-radius: .1em;
+  border-radius: .05em;
+}
+
+.project-img {
+  height:40%;  
+  border-radius: .2em;
 }
 
 .project-container {
-  background-color: #394053;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  //background-color: #394053;
   color: #555;
-  height: 12em;
-  width: 35em;
-  border-radius: .1em;
+  height: 45%;
+  width: 85%;
+  border-radius: .2em;
+
+  h1 {
+    padding: 3px 14px 3px 14px;
+    color: white;
+    //background: 
+      //linear-gradient(
+      //rgba(84, 88, 96, 0.45), 
+      //rgba(84, 88, 96, 0.45)
+      //)
+  }
 }
 
 .fn {
@@ -183,13 +197,8 @@ md-sidenav{
 }
 
 .projects {
-  background:
-    linear-gradient(
-    rgba(0, 0, 0, 0.65), 
-    rgba(0, 0, 0, 0.65)
-    ),
-    url("http://www.psdgraphics.com/file/stars.jpg");
-  background-size: cover;
+  border-bottom: 1px solid white;
+  background-color: #F5F5DC;
 }
 
 .info-container {
@@ -230,6 +239,11 @@ md-sidenav{
 
 .pastel-green {
   background-color: #57d69f;
+}
+
+.d-pastel-green {
+  background-color: #2cb378;
+  margin-bottom: 1%;
 }
 
 .pastel-cyan {
@@ -288,6 +302,14 @@ md-sidenav{
 
 .white-yellow {
   background-color: #ffffe6;
+}
+
+.gray {
+  background-color: #b2b4b7
+}
+
+.blue-gray {
+background-color: #7fa2b6;
 }
 
 .tiles {
