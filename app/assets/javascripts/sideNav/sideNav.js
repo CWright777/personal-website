@@ -42,4 +42,15 @@ function($scope, $state,viewService,$timeout){
     }
   }
 
+  $scope.showAbout = function(){
+    if (!$scope.changing && $scope.currentView != 'about') {
+      $scope.changing = true;
+      $scope.currentView = 'about'
+      viewService.changeView('about');
+      $timeout(function(){
+        $scope.changing = false;
+      },2000)
+    }
+  }
+
 }]);

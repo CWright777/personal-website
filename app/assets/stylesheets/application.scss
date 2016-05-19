@@ -121,15 +121,16 @@ md-sidenav{
 
 .project-img {
   height:40%;  
-  border-radius: .2em;
+  //border-radius: .2em;
 }
 
 .project-container {
   //background-color: #394053;
   color: #555;
-  height: 45%;
   width: 85%;
-  border-radius: .2em;
+  //border-radius: .2em;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 
   h1 {
     padding: 3px 14px 3px 14px;
@@ -197,8 +198,14 @@ md-sidenav{
 }
 
 .projects {
-  border-bottom: 1px solid white;
-  background-color: #F5F5DC;
+  background: 
+    linear-gradient(
+    rgba(84, 88, 96, 0.45), 
+    rgba(84, 88, 96, 0.45)
+    ),
+    url("http://widewallpaper.info/wp-content/uploads/2016/01/Flat-Plan-Colour-Design-Free-Downlaod-2015-Wallpapers-HD-1.png");
+
+  background-size: cover;
 }
 
 .info-container {
