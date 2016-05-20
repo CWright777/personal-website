@@ -6,11 +6,21 @@ angular.module('cliffWebsite')
 '$timeout',
 function($scope, $state,viewService,$timeout){
 
+  var views = ['technologies','about','projects']
+  for(x of views){
+    if (x == $state.current.url){
+      $scope.currentView = $state.current.url;
+      break;
+    } else {
+      $scope.currentView = 'main';
+    }
+  }
+
   $scope.changing = false;
-  $scope.currentView = 'main'
 
   $scope.showTechnologies = function(){
     if (!$scope.changing && $scope.currentView != 'technologies') {
+      $state.go('splash.technologies')
       $scope.changing = true;
       $scope.currentView = 'technologies'
       viewService.changeView('technologies');
@@ -22,6 +32,7 @@ function($scope, $state,viewService,$timeout){
 
   $scope.showHome = function(){
     if (!$scope.changing && $scope.currentView != 'main') {
+      $state.go('splash')
       $scope.changing = true;
       $scope.currentView = 'main'
       viewService.changeView('main');
@@ -33,6 +44,7 @@ function($scope, $state,viewService,$timeout){
 
   $scope.showProjects = function(){
     if (!$scope.changing && $scope.currentView != 'projects') {
+      $state.go('splash.projects')
       $scope.changing = true;
       $scope.currentView = 'projects'
       viewService.changeView('projects');
@@ -44,6 +56,7 @@ function($scope, $state,viewService,$timeout){
 
   $scope.showAbout = function(){
     if (!$scope.changing && $scope.currentView != 'about') {
+      $state.go('splash.about')
       $scope.changing = true;
       $scope.currentView = 'about'
       viewService.changeView('about');

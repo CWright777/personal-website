@@ -327,12 +327,10 @@ background-color: #7fa2b6;
 
 .tiles {
   height: 25vh;
-  text-align: center;
-  vertical-align: middle;
   min-height: 7.8em;
   min-width: 13em;
   .tile-footer {
-    height: 30%;
+    height: 20%;
     background: 
       linear-gradient(
       rgba(84, 88, 96, 0.45), 
@@ -345,7 +343,7 @@ background-color: #7fa2b6;
   h1 {
     height: 100%;
     color:#FEFDFB;
-    font-size: 1.1em;
+    font-size: .9em;
     display: flex;
     align-items: center;
     justify-content:center;

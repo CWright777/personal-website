@@ -1,14 +1,18 @@
 angular.module('cliffWebsite')
-.directive('viewLoad', function ($compile,$animate,viewService,$timeout) {
+.directive('viewLoad', function ($compile,$animate,viewService,$timeout,$stateParams,$state) {
   return {
     restrict:'E',
-    transclude: true,
-    replace:true,
-    scope: {
-      firstView: '@'
-    },
     link: function(scope,elem,attrs){
-      elem.html("<ui-view name='" + attrs.firstView + "' class='full-width'></div>")
+      if ($state.current.name == "splash.technologies") {
+        page = $state.current.url
+      } else if ($state.current.name == "splash.about"){
+        page = $state.current.url
+      } else if ($state.current.name == "splash.projects"){
+        page = $state.current.url
+      } else {
+        page = "main"
+      }
+      elem.html("<ui-view name='" + page + "' class='full-width'></div>")
       $compile(elem.contents())(scope)
       scope.$on('view_changed',function(){
         var view = viewService.getViewName()

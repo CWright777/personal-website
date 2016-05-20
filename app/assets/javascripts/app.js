@@ -14,11 +14,10 @@ function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
 
   $stateProvider
     .state('splash', {
-      url: '/:page',
+      url: '/',
       views: {
         '@': {
-         templateUrl:'main.html',
-         controller: 'templateCtrl'
+         templateUrl:'main.html'
         },
         'sidenav@splash' : {
           templateUrl: 'sideNav/_sideNav.html',
@@ -39,7 +38,16 @@ function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
         'about@splash' : {
           templateUrl: 'about/_cAbout.html',
          },
-      }
+      },
+    })
+    .state('splash.technologies',{
+      url: 'technologies'
+    })
+    .state('splash.projects',{
+      url: 'projects'
+    })
+    .state('splash.about',{
+      url: 'about'
     })
 
   $sceDelegateProvider.resourceUrlWhitelist([

@@ -2,7 +2,6 @@ angular.module('cliffWebsite')
 .factory('viewService', function($rootScope,$timeout){
 
   var service = {}
-  service.page = ''
 
   service.changeView = function(viewName){
     this.page = viewName;
