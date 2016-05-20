@@ -14,7 +14,7 @@ function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
 
   $stateProvider
     .state('splash', {
-      url: '/',
+      url: '/:page',
       views: {
         '@': {
          templateUrl:'main.html',

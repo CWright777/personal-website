@@ -114,9 +114,15 @@ md-sidenav{
   background-color: #394053;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   color: #555;
-  height: 12em;
+  height: 14em;
   width: 35em;
   border-radius: .05em;
+  padding-top:1em;
+
+  h1 {
+  color:#dedbda;
+  text-shadow: 1px 1px #858382
+  }
 }
 
 .project-img {

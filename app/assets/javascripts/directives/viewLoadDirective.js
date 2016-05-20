@@ -4,8 +4,11 @@ angular.module('cliffWebsite')
     restrict:'E',
     transclude: true,
     replace:true,
+    scope: {
+      firstView: '@'
+    },
     link: function(scope,elem,attrs){
-      elem.html("<ui-view name='main' class='full-width'></div>")
+      elem.html("<ui-view name='" + attrs.firstView + "' class='full-width'></div>")
       $compile(elem.contents())(scope)
       scope.$on('view_changed',function(){
         var view = viewService.getViewName()

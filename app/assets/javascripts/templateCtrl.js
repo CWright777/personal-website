@@ -3,6 +3,7 @@ angular.module('cliffWebsite')
 '$scope',
 '$state',
 'viewService',
-function($scope, $state, viewService){
-
+'$stateParams',
+function($scope, $state, $stateParams, viewService){
+  console.log($stateParams)
 }])

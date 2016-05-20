@@ -1,11 +1,18 @@
 <md-sidenav class="side-nav md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')" md-disable-backdrop="">
-    <div class="logo-container" ng-click="showHome()">
+    <div class="logo-container">
       <div class="outer-circle">
         <div>C.W.</div>
       </div>
     </div>
     <md-list layout-padding>
-    <md-divider class="divide"></md-divider>
+      <md-item-content class="side-nav-text" ng-click="showHome()" layout="row" layout-align="start center">
+        <div class="inset">
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </div>
+        <div class="side-nav-text inset">
+          Home
+        </div>
+      </md-item-content>
       <md-item-content class="side-nav-text" ng-click="showTechnologies()" layout="row" layout-align="start center">
         <div class="inset">
           <i class="fa fa-diamond" aria-hidden="true"></i>
@@ -14,7 +21,6 @@
           Technologies
         </div>
       </md-item-content>
-      <md-divider class="divide"></md-divider>
       <md-item-content class="side-nav-text" layout="row" layout-align="start center" ng-click="showProjects()">
         <div class="inset">
           <i class="fa fa-flask" aria-hidden="true"></i>
@@ -23,7 +29,6 @@
           Projects
         </div>
       </md-item-content>
-      <md-divider class="divide"></md-divider>
       <md-item-content class="side-nav-text" layout="row" layout-align="start center" ng-click="showAbout()">
         <div class="inset">
           <i class="fa fa-glass" aria-hidden="true"></i>
@@ -33,6 +38,5 @@
         </div>
       </md-item-content>
     </md-list>
-    <md-divider></md-divider>
 
 </md-sidenav>
