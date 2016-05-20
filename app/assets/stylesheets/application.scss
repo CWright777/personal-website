@@ -21,9 +21,9 @@ md-sidenav{
 .side-nav-text {
   color: #dedbda;
   text-decoration: none;
-  font-size: 1.15em;
+  font-size: .95em;
   letter-spacing: 2px;
-  font-family: 'Raleway';
+  font-family: 'Open Sans';
   cursor: pointer;
 }
 
@@ -339,6 +339,7 @@ background-color: #7fa2b6;
       rgba(84, 88, 96, 0.45)
       );
     width: 100%;
+    margin-top:2px;
   }
 
   h1 {
