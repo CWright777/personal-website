@@ -118,8 +118,8 @@ md-sidenav{
   padding-top:1em;
 
   h1 {
-  color:#dedbda;
-  text-shadow: 1px 1px #858382
+    color:#dedbda;
+    text-shadow: 1px 1px #858382
   }
 }
 
@@ -144,6 +144,51 @@ md-sidenav{
       //rgba(84, 88, 96, 0.45), 
       //rgba(84, 88, 96, 0.45)
       //)
+  }
+}
+
+.about-container {
+  background-color: #394053;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  height: 60vh;
+  width: 60%;
+  min-height: 600px;
+  min-width: 800px;
+  .macbook {
+    height: 200px;
+    margin-bottom:3em;
+    margin-right:3em;
+  }
+  h1 {
+    text-shadow: 1px 1px #858382;
+    letter-spacing: 5px;
+    font-family: "Open Sans";
+    margin: 0px 0px 10px 0px;
+    color:#dedbda;
+    font-size: 3.5em;
+  }
+
+  p {
+    line-height: 2em;
+    letter-spacing: 2px;
+    font-family: "Open Sans";
+    font-size: 1.1em;
+    color:#dedbda;
+    a {
+      color:#dedbda;
+    }
+  }
+
+  .intro {
+    padding:15px 64px 0px 64px;
+  }
+  .contact {
+    padding:0px 64px 0px 64px;
+    text-align: center;
+    color:#dedbda;
+  }
+  .title {
+    height: 8em;
   }
 }
 
@@ -210,13 +255,31 @@ md-sidenav{
 
   background-size: cover;
 
+  .project-container {
+    background-color:#394053;
+    border-radius: .1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width:36em;
+  }
   h1 {
     text-align:center;
     color:#dedbda;
+    opacity: 1;
   }
   a {
     color:#dedbda;
   }
+}
+
+.about {
+  background: 
+    linear-gradient(
+    rgba(84, 88, 96, 0.35), 
+    rgba(84, 88, 96, 0.35)
+    ),
+    url("https://s3-us-west-1.amazonaws.com/cliff-website/cityscape.png");
+
+  background-size: cover;
 }
 
 .info-container {
