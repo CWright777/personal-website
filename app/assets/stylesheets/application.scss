@@ -28,8 +28,7 @@ md-sidenav{
 }
 
 .logo-container {
-  cursor: pointer;
-  margin: 3.5em 0 3.5em 0;
+  margin: 6em 0 3em 0;
   text-align: center;
   vertical-align: middle;
 }
@@ -61,7 +60,6 @@ md-sidenav{
 
 //CSS for keycaps
 .key {
-  cursor: pointer;
   width: 40px;
   height: 45px;
   margin: -7px;
@@ -193,8 +191,7 @@ md-sidenav{
     rgba(84, 88, 96, 0.45), 
     rgba(84, 88, 96, 0.45)
     ),
-    url("http://lightersideofrealestate.com/wp-content/uploads/2014/09/clouds-background-light.jpg");
-
+    url("https://s3-us-west-1.amazonaws.com/cliff-website/cloud-bg.png");
   background-size: cover;
   padding: 3em;
 }
@@ -206,12 +203,20 @@ md-sidenav{
 .projects {
   background: 
     linear-gradient(
-    rgba(84, 88, 96, 0.45), 
-    rgba(84, 88, 96, 0.45)
+    rgba(84, 88, 96, 0.35), 
+    rgba(84, 88, 96, 0.35)
     ),
-    url("http://widewallpaper.info/wp-content/uploads/2016/01/Flat-Plan-Colour-Design-Free-Downlaod-2015-Wallpapers-HD-1.png");
+    url("https://s3-us-west-1.amazonaws.com/cliff-website/plane-bg.png");
 
   background-size: cover;
+
+  h1 {
+    text-align:center;
+    color:#dedbda;
+  }
+  a {
+    color:#dedbda;
+  }
 }
 
 .info-container {
@@ -219,6 +224,9 @@ md-sidenav{
   padding: 20px;
   border-radius: .1em;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  .key {
+    cursor: pointer;
+  }
 }
 
 .key-text {
