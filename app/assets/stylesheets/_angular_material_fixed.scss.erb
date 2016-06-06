@@ -1,0 +1,6 @@
+<%= 
+  # Workaround for this issue: https://github.com/angular/material/issues/6304
+  # TODO: remove this once angular-material 1.0.6 is released
+  original = File.read(File.expand_path('../../../../vendor/assets/bower_components/angular-material/angular-material.scss', __FILE__))
+  original.gsub('screen\0', 'screen ')
+%>
