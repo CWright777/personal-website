@@ -30,6 +30,7 @@ development:
   pool: 5
   host: localhost
   username: pguser
+  password: yoloyolo
   timeout: 5000
 test:
   adapter: postgresql
@@ -37,6 +38,7 @@ test:
   pool: 5
   host: localhost
   username: pguser
+  password: yoloyolo
   timeout: 5000
 
 production:
@@ -45,4 +47,5 @@ production:
   pool: 5
   host: localhost
   username: pguser
+  password: yoloyolo
   timeout: 5000
