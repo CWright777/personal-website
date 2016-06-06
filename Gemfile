@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+#Angular Rails Templates
 gem 'angular-rails-templates'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
