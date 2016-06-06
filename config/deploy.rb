@@ -2,7 +2,7 @@
 server '104.131.129.146', port: 80, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:CWright777/personal-website.git'
-set :application,     'personalWebsite'
+set :application,     'personal-website'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
