@@ -1,7 +1,7 @@
 # Change these
-server '104.131.129.146', port: 80, roles: [:web, :app, :db], primary: true
+server '104.131.129.146', port: 22, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@github.com:CWright777/personal-website.git'
+set :repo_url,        'https://github.com/CWright777/personal-website'
 set :application,     'personal-website'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
