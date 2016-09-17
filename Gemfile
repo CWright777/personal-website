@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-#Postgres
-gem 'pg'
+#Figaro
+gem "figaro"
 #Angular Rails Templates
 gem 'angular-rails-templates'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+# SQL Lite
+gem 'sqlite3'
 
 # Puma
 gem 'puma'
@@ -45,3 +47,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'rails_12factor', group: :production
