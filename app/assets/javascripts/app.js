@@ -10,7 +10,8 @@ angular.module('cliffWebsite', [
 '$stateProvider',
 '$urlRouterProvider',
 '$sceDelegateProvider',
-function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
+'$locationProvider',
+function($stateProvider, $urlRouterProvider, $sceDelegateProvider,$locationProvider) {
 
   $stateProvider
     .state('splash', {
@@ -55,4 +56,9 @@ function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
     'https://s3-us-west-1.amazonaws.com/cliff-website/**'])
 
   $urlRouterProvider.otherwise('/');
+
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
 }])
